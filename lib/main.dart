@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './screens/Home/index.dart';
+import 'package:flutter_insta_clone/screens/Home/index.dart';
 
 void main() => runApp(new MyApp());
 

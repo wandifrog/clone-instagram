@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_insta_clone/insta_stories.dart';
 
-import '../../../insta_stories.dart';
-
-class InstaBody extends StatelessWidget {
+class body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var deviceSize = MediaQuery.of(context).size;
-
-    return new Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: <Widget>[Flexible(child: ListView.builder(
+    return ListView.builder(
       itemCount: 5,
       itemBuilder: (context, index) => index == 0
           ? new SizedBox(
@@ -32,13 +28,13 @@ class InstaBody extends StatelessWidget {
                           new Container(
                             height: 40.0,
                             width: 40.0,
-                            decoration: new BoxDecoration(
+                            decoration: BoxDecoration(
                               shape: BoxShape.circle,
+                              // shape: BoxShape.rectangle,
                               image: new DecorationImage(
                                   fit: BoxFit.fill,
                                   image: new NetworkImage(
                                     'https://liquipedia.net/commons/images/b/b5/Icefrog.jpg')),
-                                      // "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg")),
                             ),
                           ),
                           new SizedBox(
@@ -61,6 +57,9 @@ class InstaBody extends StatelessWidget {
                   fit: FlexFit.loose,
                   child: new Image.network(
                     'https://steamcdn-a.akamaihd.net/apps/dota2/images/blog/play/screenshot_07.jpg',
+                    // "https://images.pexels.com/photos/672657/pexels-photo-672657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    // fit: BoxFit.fitHeight,
+                    // height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width
                   ),
                 ),
@@ -112,6 +111,7 @@ class InstaBody extends StatelessWidget {
                               fit: BoxFit.fill,
                               image: new NetworkImage(
                                 'https://liquipedia.net/commons/images/b/b5/Icefrog.jpg')),
+                                  // "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg")),
                         ),
                       ),
                       new SizedBox(
@@ -135,7 +135,6 @@ class InstaBody extends StatelessWidget {
                 )
               ],
             ),
-    ))],
     );
   }
 }
