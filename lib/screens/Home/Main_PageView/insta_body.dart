@@ -46,7 +46,7 @@ class InstaBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        // new InstaStories(),
+        new InstaStories(),
         Text('hello world 123 123 1231'),
         Text('hello wasdorld'),
         loadingKedua(5.0),
