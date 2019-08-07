@@ -44,13 +44,15 @@ loadingKedua(double tokai) {
 class InstaBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        new InstaStories(),
-        // Text('hello world 123 123 1231'),
-        Text('hellow world'),
-        // loadingKedua(5.0),
-      ],
+    return Container(
+      color: Colors.white,
+      child: Column(
+        children: <Widget>[
+          new InstaStories(),
+          Text('hellow world'),
+          // loadingKedua(5.0),
+        ],
+      ),
     );
   }
 }

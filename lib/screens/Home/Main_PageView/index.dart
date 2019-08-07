@@ -29,8 +29,8 @@ class MainPageView extends StatelessWidget {
   );
 
   final bottomNav = new Container(
-    color: Colors.white,
     height: 50.0,
+    color: Colors.white10,
     alignment: Alignment.center,
     child: new BottomAppBar(
       elevation: 3.0,

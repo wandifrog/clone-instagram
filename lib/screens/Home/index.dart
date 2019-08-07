@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           new MainPageView(),
           Container(
             child: Center(child: Text("Direct Message")),
-            color: Colors.grey[50],
+            // color: Colors.grey[50],
           ),
         ],
         pageSnapping: true,
