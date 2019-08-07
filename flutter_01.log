@@ -1,0 +1,46 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --target lib\main.dart -d 621a9084 --track-widget-creation --start-paused
+
+## exception
+
+_InternalLinkedHashMap<String, dynamic>: {code: 100, message: Feature is disabled, data: {request: {method: _reloadSources, params: {pause: true, rootLibUri: file:///data/data/com.example.flutterinstaclone/code_cache/Instagram%202IMMKSA/Instagram%202/lib/main.dart.incremental.dill, packagesUri: file:///data/data/com.example.flutterinstaclone/code_cache/Instagram%202IMMKSA/Instagram%202/.packages, isolateId: isolates/871018744}}, details: This isolate cannot reload sources right now.}}
+
+```
+null```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.7.8+hotfix.4, on Microsoft Windows [Version 6.3.9600], locale en-US)
+    • Flutter version 1.7.8+hotfix.4 at C:\src\flutter
+    • Framework revision 20e59316b8 (3 weeks ago), 2019-07-18 20:04:33 -0700
+    • Engine revision fee001c93f
+    • Dart version 2.4.0
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.1)
+    • Android SDK at C:\Users\Wandi\AppData\Local\Android\Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.1
+    • ANDROID_HOME = C:\Users\Wandi\AppData\Local\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 3.4)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 37.1.1
+    • Dart plugin version 183.6270
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+
+[✓] VS Code, 64-bit edition (version 1.36.1)
+    • VS Code at C:\Program Files\Microsoft VS Code
+    • Flutter extension version 3.3.0
+
+[✓] Connected device (1 available)
+    • A37f • 621a9084 • android-arm64 • Android 5.1.1 (API 22)
+
+• No issues found!
+```

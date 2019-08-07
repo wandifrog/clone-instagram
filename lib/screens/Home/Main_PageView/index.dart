@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_insta_clone/screens/Home/Main_PageView/body.dart';
+import './insta_body.dart';
 
 class MainPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return Container(
       child: Scaffold(
         appBar: topBar,
-        body: new body(),
+        body: new InstaBody(),
         bottomNavigationBar: bottomNav,
       ),
     );
   }
 
-  final topBar = new AppBar(
+  final topBar = AppBar(
     backgroundColor: Color(0xfff8faf8),
     centerTitle: true,
     elevation: 5.0,
@@ -38,28 +38,19 @@ class MainPageView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           new IconButton(
-            icon: Icon(
-              Icons.home,
-            ),
+            icon: Icon(Icons.home),
             onPressed: () {},
           ),
           new IconButton(
-            icon: Icon(
-              Icons.search,
-            ),
+            icon: Icon(Icons.search),
             onPressed: () {},
           ),
           new IconButton(
-            icon: new Icon(
-              Icons.add_box,
-            ),
+            icon: new Icon(Icons.add_box),
             onPressed: () {},
           ),
           new IconButton(
-            icon: Icon(
-              Icons.home,
-              // Icons.favorite,
-            ),
+            icon: Icon(Icons.home),
             onPressed: () {},
           ),
           new IconButton(
