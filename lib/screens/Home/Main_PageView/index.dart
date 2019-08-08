@@ -1,18 +1,8 @@
 import 'package:flutter/material.dart';
-import './insta_body.dart';
+import './insta-stories.dart';
+import './insta-posts.dart';
 
 class MainPageView extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        appBar: topBar,
-        body: new InstaBody(),
-        bottomNavigationBar: bottomNav,
-      ),
-    );
-  }
-
   final topBar = AppBar(
     backgroundColor: Color(0xfff8faf8),
     centerTitle: true,
@@ -61,4 +51,20 @@ class MainPageView extends StatelessWidget {
       ),
     ),
   );
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Scaffold(
+        appBar: topBar,
+        body: Column(
+          children: <Widget>[
+            new InstaStories(),
+            new InstaPosts(),
+          ],
+        ),
+        bottomNavigationBar: bottomNav,
+      ),
+    );
+  }
 }

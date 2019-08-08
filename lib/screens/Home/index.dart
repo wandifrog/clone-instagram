@@ -11,12 +11,10 @@ class HomeScreen extends StatelessWidget {
         children: <Widget>[
           Container(
             child: Center(child: Text("camera 2")),
-            color: Colors.grey[100],
           ),
           new MainPageView(),
           Container(
             child: Center(child: Text("Direct Message")),
-            // color: Colors.grey[50],
           ),
         ],
         pageSnapping: true,

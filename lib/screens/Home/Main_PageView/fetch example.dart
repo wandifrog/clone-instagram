@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import './insta_stories.dart';
+import './insta-stories.dart';
+// import './insta_body.dart';
 
 const url = 'https://goapiwf.herokuapp.com/api/instagram';
 Future<Post> fetchPost() async {
@@ -41,7 +42,7 @@ loadingKedua(double tokai) {
   return Center(child: CircularProgressIndicator(strokeWidth: tokai));
 }
 
-class InstaBody extends StatelessWidget {
+class InstaPosts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
