@@ -7,7 +7,7 @@ class InstaStories extends StatelessWidget {
     print(Colors.green);
     return Container(
         // color: Colors.amber,
-        margin: EdgeInsets.only(right: 20),
+        margin: EdgeInsets.only(right: 17),
         child: Column(
           children: <Widget>[
             Stack(
@@ -31,31 +31,48 @@ class InstaStories extends StatelessWidget {
                       ],
                     ),
                   ),
-
                   child: Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      width: 58.0,
-                      height: 58.0,
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-                        border: Border.all(
-                          color: Colors.white,
-                          width: 2.0,
+                      alignment: Alignment.center,
+                      child: Container(
+                        width: 58.0,
+                        height: 58.0,
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                'https://pbs.twimg.com/profile_images/807755806837850112/WSFVeFeQ.jpg'),
+                          ),
+                          border: Border.all(
+                            color: Colors.white,
+                            width: 2.0,
+                          ),
                         ),
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: NetworkImage(
-                              'https://pbs.twimg.com/profile_images/807755806837850112/WSFVeFeQ.jpg'),
+                        child: Align(
+                          alignment: Alignment(1.2, 1.2),
+                          child: Container(
+                            width: 17.0,
+                            height: 17.0,
+                            decoration: BoxDecoration(
+                                color: Colors.blue, shape: BoxShape.circle),
+                            child: Icon(Icons.add,
+                                color: Colors.white, size: 12.0),
+                          ),
                         ),
-                      ),
-                    ),
-                  ),
-
+                      )),
                 ),
               ],
             ),
-            Text(pText)
+            Container(
+              margin: EdgeInsets.only(top: 5.0),
+              child: Text(
+                pText,
+                style: TextStyle(
+                  fontSize: 13.0,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            )
           ],
         ));
   }
@@ -63,8 +80,8 @@ class InstaStories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      margin: const EdgeInsets.symmetric(horizontal: 13.0, vertical: 15.0),
-      height: 80.0,
+      margin: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 15.0),
+      height: 90.0,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
