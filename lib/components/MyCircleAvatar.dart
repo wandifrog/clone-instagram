@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class MyCircleAvatar extends StatelessWidget {
   static double circleSize;
 
-  MyCircleAvatar([String sized = '']) {
+  MyCircleAvatar([String sized = '', bool asd = false]) {
     circleSize = sized == 'small' ? 40.0 : 62.0;
     this.load();
   }
